@@ -21,13 +21,13 @@ window.onload=function(){
 	}
     //页面加载时检测cookie
 	if(getCookie("topAd")==="true"){
-		$("ad").style.display = "none";
+		$("adv").style.display = "none";
 	}else{
-		$("ad").style.display = "block";
+		$("adv").style.display = "block";
 	}
 	//关闭广告
 	$("close").onclick=function(){
-		$("ad").style.display="none";
+		$("adv").style.display="none";
 		setCookie("topAd","true","365");
 	};
 	
