@@ -1,7 +1,8 @@
 //getElementById封装
 function $(id){
-	return typeof id === "string"?docuent.getElementById(id):id;
+	return typeof id === "string"?document.getElementById(id):id;
 }
+console.log($("adv"));
 //利用cookie控制广告通知条
 window.onload=function(){
 	//设置cookie
