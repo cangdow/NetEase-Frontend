@@ -10,6 +10,10 @@
 轮播图:top:125px;height:460px;
 三个产品介绍:top:585px;height:295px;
 工作环境:top:880px;height:220px;
+主内容区:top:1180px;height:1350px;
+	top-tag:height:50px;
+	mian-content:height:1220px;
+
 logo 网易教育产品部 235 * 22   
 关注图标 54 * 21  
 轮播图尺寸:1616 * 460  原始图片尺寸:1652 * 460
