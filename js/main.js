@@ -80,14 +80,14 @@ function autoplay(){
 		show(n-2);
 		n--;
 	}
-	var m=setInterval(nextPic, 2500);
+	var m=setInterval(nextPic, 5000);
 	//4.将图片和左右箭头鼠标悬停时清除计时器，写成函数pause
 	//4.将图片和左右箭头鼠标离开时重启计数器，写成函数restart
 	function pause(){
 		clearInterval(m);
 	}
 	function restart(){
-		m=setInterval(nextPic,2500);
+		m=setInterval(nextPic,5000);
 	}
 	//1.手动轮播：把选中按钮和图片添加相应类名，把原来选中的按钮和图片取消相应类名
 	for(i=0;i<btns.length;i++){
@@ -99,7 +99,7 @@ function autoplay(){
 		}
 		btns[i].onmouseout=function(){
 			n=this.index+1;
-			m=setInterval(nextPic, 2500);
+			m=setInterval(nextPic, 5000);
 		}
 		imgs[i].onmouseover=pause;
 		imgs[i].onmouseout=restart;
@@ -141,6 +141,7 @@ function autoplay(){
 		}
 	}
 }
+
 window.onload = function(){
 	advBanner();
 	autoplay();

@@ -1,7 +1,7 @@
 *{	margin:0;
   	padding:0;
 	text-decoration: none;
-    font-family: SimSun; /*for箭头样式*/
+    font-family: MicrosoftYaHei; 
 }
 /*广告通知条开始*/
 #adv{
@@ -135,5 +135,35 @@
     clear:both;
 }
 /*轮播图结束*/
+/*三个产品开始*/
+#product{position: absolute;top: 585px;width: 100%;height: 296px;
+}
+#product-main{width: 1205px;height: 176px;margin:auto;margin-top: 60px;
+}
+#product-main .p-product{width: 340px;height: 176px;}
+#product-main #open{float: left;}
+#product-main #class{float: left;margin-left: 92.5px;}
+#product-main #mooc{float: right;}
+#product-main .p-img{width: 80px;height: 80px;position:relative; top:7px;
+float:left;overflow:hidden;}
+#product-main #p-img1{background: url(../images/three.png) 0 0 no-repeat;}
+#product-main #p-img2{background: url(../images/three.png) -85px 0 no-repeat;}
+#product-main #p-img3{background: url(../images/three.png) -170px 0 no-repeat;}
+#product-main .p-txt{width: 243px;height:176px; float: right;}
+#product-main .p-h3{font-size: 22px;margin-bottom: 20px;color: #333}
+#product-main .p-p{font-size: 14px;margin-bottom: 34px;color: #666}
+#product-main .p-txt a{color: #21a557;font-size: 14px;}
+/*三个产品结束*/
+
+
+
+
+
+
+
+
+
+
+
 
 
