@@ -140,9 +140,41 @@ function autoplay(){
 			})(i);
 		}
 	}
-}
+}	
+	
+function worksplay(){
+	var oWork = document.getElementById("work");
+	var oUl = oWork.getElementsByTagName("ul")[0];
+	var oLi = oUl.getElementsByTagName("li");
+	var oimg = document.getElementsByClassName("aImg");
+	var timer = null;
 
+	oUl.innerHTML += oUl.innerHTML; //放置重复的两套
+	oUl.style.width = oLi[0].offsetWidth*oLi.length+"px";//让ul的宽度足够的宽.
+	var a = true;
+	for (var i = 0; i < oimg.length; i++) {
+
+	oimg[i].onmouseover = function(){
+	   a = false;
+	}
+	oimg[i].onmouseout = function(){
+	   a = true;
+	}
+	function doit(){
+
+		if(a){
+			oUl.style.left = oUl.offsetLeft -2 +"px";
+
+			if(oUl.offsetLeft< -oUl.offsetWidth/2){
+				oUl.style.left = 0;
+			}
+		}
+		};
+	}
+	timer = setInterval(doit,50);
+}
 window.onload = function(){
 	advBanner();
 	autoplay();
+	worksplay();
 }
