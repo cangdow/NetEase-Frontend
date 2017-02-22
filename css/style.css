@@ -169,9 +169,14 @@ float:left;overflow:hidden;}
 #main-wrap{width: 1205px;height: 1350px;margin:auto;}
 #main-side{width: 960px;height: 1350px;float: left; }
 /*#top-tag{border:0 1px 2px 1px;border-color: #d4d3d3;}*/
-#main-side #main-content{width: 960px;height:1220px;margin-top: 30px;
-background-color: #eee;}
+#main-side #main-content{width: 960px;height:1220px;margin-top: 30px;}
 
+#main-list{width: 960px;height: 228px;}
+#main-list + #main-list{margin-top: 20px;}
+
+#main-side #main-content .album{width: 225px;height: 228px;
+background-color: #eee;float: left;}
+#main-side #main-content .album + .album{margin-left: 20px;}
 
 #main-side #fangye{width: 300px;height: 20px;
 margin-top: 30px;margin-left: 660px;background-color: #eee;}
