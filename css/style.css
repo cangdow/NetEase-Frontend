@@ -18,11 +18,13 @@
 }
 #adv a{
     color: #21a557;
+    background-color: transparent;  /*回到默认设置*/
 }
 #adv span{
     position: absolute;
     right: 207px;
     cursor: pointer;
+    background-color: transparent;  /*回到默认设置*/
 }
 /*广告通知条结束*/
 /*导航栏开始*/
@@ -52,6 +54,7 @@
     width: 100%;
     height: 460px;
     overflow: hidden;
+
 }
 .ad .list{
     width: 1652px;
@@ -88,6 +91,7 @@
     width: 100px;
     text-align: center;
     z-index: 2;
+    background-color: transparent;  /*回到默认设置*/
 }
 .ad .btn span{
     float: left;
@@ -165,6 +169,7 @@ float:left;overflow:hidden;}
 /*工作环境结束*/
 
 /*主内容区开始*/
+/*主栏部分*/
 #main{position: absolute;top: 1180px;width: 100%;height: 1350px;}
 #main-wrap{width: 1205px;height: 1350px;margin:auto;}
 #main-side{width: 960px;height: 1350px;float: left; }
@@ -178,13 +183,38 @@ float:left;overflow:hidden;}
 background-image: url(../images/album.jpg);}
 #main-side #main-content .album + .album{margin-left: 20px;}
 
+/*翻页部分*/
 #main-side #fangye{width: 300px;height: 20px;
-margin-top: 30px;margin-left: 660px;background-color: #eee;}
+margin-top: 30px;margin-left: 660px;
+background: url(../images/fangye.jpg);}
 
 
-#right-side{width: 222px;height: 1350px;float: right; 
-background-color: #eee;}
-/*boder 1px*/
+/*侧边栏部分*/
+#right-side{width: 222px;height: 1350px;float: right;}
+#intr{background-color: #fff;}
+#intr .intr-p{width: 222px;height: 55px;font-size: 16px;color: #333;
+box-shadow: 0px 1px 1px 1px #ddd;
+box-sizing: border-box;padding-left: 20px;padding-top: 19px;}
+#intr .intr-v{width: 222px;height: 180px;font-size: 14px;color: #666; 
+box-shadow: 0px 2px 1px 1px #ddd;
+border-top: 1px solid #ddd;
+box-sizing: border-box;padding-left: 20px;padding-top: 19px; 
+}
+#intr .intr-v .video{width: 180px;height: 110px;margin-top: 9px;
+background: url(../images/video.jpg);
+}
+
+#hot{margin-top: 20px;}
+#hot .hot-p{width: 222px;height: 55px;font-size: 16px;color: #333;
+box-shadow: 0px 1px 1px 1px #ddd;
+box-sizing: border-box;padding-left: 20px;padding-top: 19px;}
+#hot .hot-list{width: 222px;font-size: 14px;color: #666; 
+box-shadow: 0px 2px 1px 1px #ddd;
+border-top: 1px solid #ddd;
+box-sizing: border-box;padding-left: 20px;padding-top: 19px; 
+}
+#hot .hot-list .list{width:183px;height: 50px;margin-bottom: 21px;
+background: url(../images/list.jpg);}
 /*主内容区结束*/
 
 /*footer区开始*/
