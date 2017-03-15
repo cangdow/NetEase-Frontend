@@ -2,14 +2,14 @@
 function $(id){
 	return typeof id === "string"?document.getElementById(id):id;
 }
-//利用cookie控制广告通知条
+//广告通知条
 function advBanner(){
 	//设置cookie
 	function setCookie(name, value, expires) {
-		  var exdate=new Date();
-		  exdate.setDate(exdate.getDate()+expires);
+		  var timer=new Date();
+		  timer.setDate(timer.getDate()+expires);
 		  document.cookie=name+ "=" +escape(value)+
-		  ((expires==null) ? "" : ";expires="+exdate.toGMTString());
+		  ((expires==null) ? "" : ";expires="+timer.toGMTString());
 	}
 	//获取cookie
 	function getCookie(name) {
@@ -36,13 +36,13 @@ function advBanner(){
 		setCookie("topAd","true","365");
 	};
 }
-
+//轮播图
 function autoplay(){
-	var oAd=document.getElementById('ad');
+	var oAd=$('ad');
 	var aControl=oAd.getElementsByClassName('arrow');
-	var oList=document.getElementById('list');
+	var oList=$('list');
 	var aImgs=oList.getElementsByTagName('img');
-	var oBtn=document.getElementById('btns');
+	var oBtn=$('btns');
 	var aBtns=oBtn.getElementsByTagName('span');
 
 	var index=0;
@@ -113,7 +113,7 @@ function autoplay(){
 		}
 	}
 }	
-	
+//工作环境	
 function worksplay(){
 	var oWork = document.getElementById("work");
 	var oUl = oWork.getElementsByTagName("ul")[0];
